@@ -1,0 +1,21 @@
+{
+  "name": "playwrightauto3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "po-test-chromium": "npx playwright test ./tests/LoginSauce.spec.ts --project=chromium",
+  
+    "po-test-chromium:qa": "set TEST_ENV=qa && npx playwright test ./tests/LoginSauce.spec.ts --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.11"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10"
+  }
+}
